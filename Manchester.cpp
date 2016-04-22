@@ -337,6 +337,9 @@ void MANRX_SetupReceive(uint8_t speedFactor)
     OCR3A is 16 bit register
     */
     
+    TCCR3A = 0;         // 2016, added, make it work for Leonardo (contribution by Koepel. See rep mchr3k.)
+    TCCR3B = 0;         // 2016, added, make it work for Leonardo (contribution by Koepel. See rep mchr3k.)
+    
     TCCR3B = _BV(WGM32) | _BV(CS31); // 1/8 prescaler
     #if F_CPU == 1000000UL
       OCR3A = (64 >> speedFactor) - 1; 
