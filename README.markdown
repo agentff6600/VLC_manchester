@@ -3,14 +3,22 @@
 
 This is the library for the project "lumoino". 
 
-You will find Arduino sketches which are based on the instructions of the booklet "lumoino - talking light".
+The Arduino sketches are based on the instructions of the booklet "lumoino - talking light".
 
 The lumoino project is a master degree project done at KTH during spring 2016.
 The intend is to provide examples for users to play around with Visible Light Communication with basic components like LEDs and photodiodes.
 
+##Installation in Arduino
+1. Download the zip file of this repository.
+2. Open the Arduino IDE (download [here](http://www.arduino.cc))
+3. Go to Sketch -> Include library -> Add .zip Library...
+4. Select "agentff6600-lumoino-336a4b0.zip"
+
+##Future work
+
 This project is just the beginning and shows a fraction of what is possible in Visbible Light Communication.
 
-Possible ideas for future work:
+Possible ideas for this project:
 - Use LED as a receiver too
 - Bi-directional communication (like in [this paper](http://www.merl.com/publications/docs/TR2003-35.pdf "this paper"))
 - iOS and Android app to make use of the rolling shutter effect
