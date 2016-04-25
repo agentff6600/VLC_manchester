@@ -10,10 +10,10 @@ This project is just the beginning and shows a fraction of what is possible in V
 
 Possible ideas for future work:
 - Use LED as a receiver too
-- Bi directional communication (like in [link](http://www.merl.com/publications/docs/TR2003-35.pdf "this paper")
+- Bi-directional communication (like in [link](http://www.merl.com/publications/docs/TR2003-35.pdf "this paper"))
 - iOS and Android app to make use of the rolling shutter effect
-- 
-
+- Simple "light to audio" interface using the microphone port ((like in [link](https://www.disneyresearch.com/publication/from-sound-to-sight-using-audio-processing-to-enable-visible-light-communication/"this paper"))
+- A pure data patch (using the "light to audio" interface)
 
 
 This project would not be possible without the awesome work of mchr3k. The Arduino Manchester Encoding library is an essential piece of this project and is very easy to understand! One has to mention it was originally intended for Radio Frequency communication but it works just fine with Visible Light Communication via LED and photodiodes as well. :)
