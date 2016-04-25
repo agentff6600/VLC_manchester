@@ -12,7 +12,8 @@ The intend is to provide examples for users to play around with Visible Light Co
 1. Download the zip file of this repository.
 2. Open the Arduino IDE (download [here](http://www.arduino.cc))
 3. Go to Sketch -> Include library -> Add .zip Library...
-4. Select "agentff6600-lumoino-336a4b0.zip"
+4. Select "lumoino-master.zip" a press "Choose"
+5. Done!
 
 ##Future work
 
