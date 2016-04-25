@@ -14,7 +14,7 @@ Possible ideas for future work:
 - Use LED as a receiver too
 - Bi-directional communication (like in [this paper](http://www.merl.com/publications/docs/TR2003-35.pdf "this paper"))
 - iOS and Android app to make use of the rolling shutter effect
-- Simple "light to audio" interface using the microphone port ((like in [this paper](https://www.disneyresearch.com/publication/from-sound-to-sight-using-audio-processing-to-enable-visible-light-communication/ "this paper"))
+- Simple "light to audio" interface using the microphone port (like in [this paper](https://www.disneyresearch.com/publication/from-sound-to-sight-using-audio-processing-to-enable-visible-light-communication/ "this paper"))
 - A pure data patch (using the "light to audio" interface)
 
 
