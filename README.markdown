@@ -17,6 +17,7 @@ Possible ideas for future work:
 - Simple "light to audio" interface using the microphone port (like in [this paper](https://www.disneyresearch.com/publication/from-sound-to-sight-using-audio-processing-to-enable-visible-light-communication/ "this paper"))
 - A pure data patch (using the "light to audio" interface)
 
+## Credits
 
 This project would not be possible without the awesome work of mchr3k. The Arduino Manchester Encoding library is an essential piece of this project and is very easy to understand! One has to mention it was originally intended for Radio Frequency communication but it works just fine with Visible Light Communication via LED and photodiodes as well. :)
 
