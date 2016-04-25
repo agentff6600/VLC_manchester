@@ -1,5 +1,5 @@
 
-# lumoino - talking lights
+# Lumoino - talking lights
 
 This is the library for the project "lumoino". 
 
