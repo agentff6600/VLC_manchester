@@ -2,22 +2,32 @@
 #include <Servo.h>
 /*
 
-  Manchester Receiver example
+  RECEIVER
+
+  from the experiments the in lumoino manual:
+      "Remote Control"
+
+  This is based on the sketch: https://www.arduino.cc/en/Tutorial/Knob
+  Differences:
+
+  Only attach the servo to the RX module
+  Only attach the potentiometer to the TX module
   
-  In this example receiver will receive one 16 bit number per transmittion
+  
+  Based on the github repository of mchr3k. Amazing work! https://github.com/mchr3k/arduino-libs-manchester
 
-  try different speeds using this constants, your maximum possible speed will 
-  depend on various factors like transmitter type, distance, microcontroller speed, ...
-
-  MAN_300 0
-  MAN_600 1
-  MAN_1200 2
-  MAN_2400 3
-  MAN_4800 4
-  MAN_9600 5
-  MAN_19200 6
-  MAN_38400 7
-
+  TRANSMITTER AND RECEIVER MUST HAVE THE SAME SPEED
+  Try different speed settings using these constants:
+  
+  MAN_300   (you can see the flickering of the LED)
+  MAN_600
+  MAN_1200  (best)
+  MAN_2400
+  MAN_4800
+  MAN_9600
+  MAN_19200
+  MAN_38400 (very hard to read by the photodiode)
+  
 */
 
 #define RX_PIN 9        // The Pin where your Photodiode is plugged-in.

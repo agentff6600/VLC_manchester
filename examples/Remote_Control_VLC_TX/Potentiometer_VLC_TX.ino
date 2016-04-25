@@ -5,10 +5,13 @@
   TRANSMITTER ANALOG SIGNAL
 
   from the experiments in the lumoino manual:
-      LUMU TALKS FOR OTHERS
+      "Remote Control!"
 
-  To transmit the value read on the analog pin 
-  The transmitted message is a number from 0 to infinity (not really but thats another story)
+  This is based on the sketch: https://www.arduino.cc/en/Tutorial/Knob
+  Differences:
+
+  Only attach the servo to the RX module
+  Only attach the potentiometer to the TX module
   
   
   Based on the github repository of mchr3k. Amazing work! https://github.com/mchr3k/arduino-libs-manchester
