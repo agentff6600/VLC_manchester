@@ -42,9 +42,10 @@
 uint16_t transmit_data = 0;              // here we will store your message to send. The message is just a number.
 
 void setup() {
- 
-  man.workAround1MhzTinyCore();          //add this in order for transmitter to work with 1Mhz Attiny85/84
+
   
+  man.workAround1MhzTinyCore();          //add this in order for transmitter to work with 1Mhz Attiny85/84
+
 }
 
 void loop() {                            // the follow programm will be repeated to infinity and beyond.

@@ -28,16 +28,11 @@
   
 */
 
-#define TX_PIN 1  //pin where your transmitter is connected
-#define LED_PIN 5 //pin for blinking LED
+#define TX_PIN 13  //pin where your transmitter is connected
 
-uint8_t moo = 1; //last led status
 uint8_t data[15] = "work.ff6600.ch";      //the array with the string "hello world". 12 defines how long the array is. "hello world" has 11 symbol. to that 
 
 void setup() {
-  
-  pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, moo);
   
   man.workAround1MhzTinyCore();         //add this in order for transmitter to work with 1Mhz Attiny85/84
   
@@ -47,8 +42,5 @@ void setup() {
 void loop() {                           // the follow programm will be repeated to infinity and beyond.
   
   man.transmitArray(15, data);          // here we tell arduino to send the message.
-  
-  moo = ++moo % 2;                      // after the message is sent this toggles the 
-  digitalWrite(LED_PIN, moo);           // LED on pin 13 on and off. So if the led is blinking you know that it's sending messages!
- 
+   
 }
