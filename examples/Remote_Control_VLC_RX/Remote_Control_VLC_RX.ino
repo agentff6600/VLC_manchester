@@ -43,9 +43,6 @@ void setup() {
   man.setupReceive(RX_PIN, MAN_1200);  // this sets up the pin where your photodiode is plugged in. Also the speed is set here with MAN_1200.
   man.beginReceive();               //start listening for next message right after you retrieve the message
 
-  Serial.begin(9600);
-
-
 }
 
 
@@ -55,7 +52,6 @@ void loop() {
 
     uint16_t m = man.getMessage();    // the message is stored in the variable "m".
 
-
     val = map(m, 0, 1023, 255, 0);    // this scales down the message with the range 0-1023 to a range of 0-255 and saves it to the variable "val".
     analogWrite(SIGNAL_PIN, val);     // the variable "val" changes the voltage on the SIGNAL_PIN.
 
@@ -64,7 +60,6 @@ void loop() {
     moo = ++moo % 2;                    // if the message is received correctly this toggles the
     digitalWrite(LED_PIN, moo);         // LED on pin 13 on and off. So if the led is blinking you know that it's working!
 
-    Serial.println(m);
   }
 
 }
