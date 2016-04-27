@@ -2,17 +2,15 @@
 
 /*
 
-  TRANSMITTER ANALOG SIGNAL
+  REMOTE CONTROLL EMITTER TX
 
-  from the experiments in the lumoino manual:
-      "Remote Control!"
-
-  This is based on the sketch: https://www.arduino.cc/en/Tutorial/Knob
-  Differences:
-
-  Only attach the servo to the RX module
-  Only attach the potentiometer to the TX module
-  
+  You need for the emitter
+    - Arduino UNO
+    - Bright LED
+    - Photodiode (SFH203)
+    - Resistor 1MΩ
+    - Potentiometer 1MΩ
+    
   
   Based on the github repository of mchr3k. Amazing work! https://github.com/mchr3k/arduino-libs-manchester
 
