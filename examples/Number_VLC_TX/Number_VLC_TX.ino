@@ -34,12 +34,9 @@ uint16_t transmit_data = 0;             // here we will store your message to se
 
 void setup() {
   
-  pinMode(LED_PIN, OUTPUT);
-  digitalWrite(LED_PIN, moo);
-  
   man.workAround1MhzTinyCore();        // needed if you decide to use an 1Mhz Attiny85/84 chipset. just ignore for now.
   
-  man.setupTransmit(TX_PIN, MAN_1200); //TRANSMITTER AND RECEIVER MUST HAVE THE SAME SPEED
+  man.setupTransmit(TX_PIN, MAN_1200); // TRANSMITTER AND RECEIVER MUST HAVE THE SAME SPEED
   
 }
 
@@ -47,7 +44,6 @@ void loop() {                          // the follow programm will be repeated t
   
   man.transmit(transmit_data);         // here we tell arduino to send the current message/number.
   
-  moo = ++moo % 2;                     // after the message is sent this toggles the 
-  digitalWrite(LED_PIN, moo);          // LED on pin 13 on and off. So if the led is blinking you know that it's sending messages!
+  transmit_data++;                     // after the message is sent this adds 1 to the message/number. "++" means "add 1 to the variable.
     
 }
