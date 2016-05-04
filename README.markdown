@@ -1,6 +1,8 @@
 
 # Lumoino - talking lights
 
+## UNDER CONSTRUCTION
+
 This is the library for the project "lumoino". 
 
 The Arduino sketches are based on the instructions of the booklet "lumoino - talking light".
