@@ -5,7 +5,7 @@
 
 This is the library for the project "lumoino". 
 
-The Arduino sketches are based on the instructions of the booklet "lumoino - talking light".
+The Arduino sketches are based on the instructions of the booklet "lumoino - talking light" (lumoino_manual.pdf).
 
 The lumoino project is a master degree project done at KTH during spring 2016.
 The intend is to provide examples for users to play around with Visible Light Communication with basic components like LEDs and photodiodes.
